@@ -3,6 +3,7 @@
 import { useAppDispatch, useAppSelector } from '@/app/redux'
 import { setIsDarkMode, setIsSidebarCollapsed } from '@/state'
 import { Bell, Menu, Moon, Settings, Sun } from 'lucide-react'
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -51,7 +52,7 @@ const Navbar = () => {
           <hr className='w-0 h-7 border-solid border-1 border-gray-300 mx-3' />
           <div className='flex items-center gap-3 cursor-pointer'>
             <div className='w-9 h-9'>
-              <img src="https://i.pravatar.cc/300?u=a042581f4e290267042" alt="" className='w-full h-full rounded-full' />
+              <Image src="https://s3-inventorymanagement-v2.s3.ap-southeast-2.amazonaws.com/profile.jpg" alt="Profile" width={50} height={50} className="rounded-full h-full object-cover" />
             </div>
             <span className='font-semibold'>Ren Mission</span>
           </div>
